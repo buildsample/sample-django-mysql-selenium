@@ -25,7 +25,8 @@ script:
   - python manage.py test
   - echo $BUILD_NUMBER
   - echo $BRANCH
-  - echo $BUILD_NUMBER and $BUILD_URL 
+  - echo $BUILD_NUMBER  
+  - echo $BUILD_URL 
   - echo $COMMIT 
   - echo $DEBIAN_FRONTEND
   - echo $JOB_ID
