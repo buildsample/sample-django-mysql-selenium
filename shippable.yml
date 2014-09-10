@@ -31,7 +31,7 @@ script:
   - echo $JRUBY_OPTS
   - echo $LANG 
   - echo $LC_ALL
-  - echo $MERB_ENV and $PULL_REQUEST and $RACK_ENV and $RAILS_ENV : test
+  - echo $MERB_ENV and $PULL_REQUEST and $RACK_ENV and $RAILS_ENV 
   - echo $USER 
 
 after_script:
