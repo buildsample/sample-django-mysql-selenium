@@ -23,6 +23,7 @@ before_script:
 
 script:
   - python manage.py test
+  - echo $BUILD_NUMBER
 
 after_script:
   - /etc/init.d/xvfb stop
