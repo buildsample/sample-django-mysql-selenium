@@ -25,13 +25,17 @@ script:
   - python manage.py test
   - echo $BUILD_NUMBER
   - echo $BRANCH
-  - echo  $BUILD_NUMBER and $BUILD_URL 
-  - echo $COMMIT and $DEBIAN_FRONTEND
+  - echo $BUILD_NUMBER and $BUILD_URL 
+  - echo $COMMIT 
+  - echo $DEBIAN_FRONTEND
   - echo $JOB_ID
   - echo $JRUBY_OPTS
   - echo $LANG 
   - echo $LC_ALL
-  - echo $MERB_ENV and $PULL_REQUEST and $RACK_ENV and $RAILS_ENV 
+  - echo $MERB_ENV 
+  - echo $PULL_REQUEST 
+  - echo $RACK_ENV 
+  - echo $RAILS_ENV 
   - echo $USER 
 
 after_script:
