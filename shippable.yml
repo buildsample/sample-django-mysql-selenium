@@ -11,6 +11,7 @@ services:
 env:
   global:
     - DISPLAY=:99.0
+    - name=foo
 
 install:
   - pip install -r requirements.txt
@@ -25,7 +26,11 @@ script:
   - python manage.py test
   - echo $BUILD_NUMBER
   - cat  ~/.gitconfig
+  - echo $name
 
 after_script:
   - /etc/init.d/xvfb stop
+
 archive: true
+
+
