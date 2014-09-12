@@ -3,7 +3,8 @@ language: python
 python:
   - 2.7
 addons:
-  firefox: "32.0"
+  #firefox: "32.0"
+  firefox: "31.0"
 
 services:
   - selenium
@@ -11,7 +12,7 @@ services:
 env:
   global:
     - DISPLAY=:99.0
-    - name=foo
+   # - name=foo
 
 install:
   - pip install -r requirements.txt
