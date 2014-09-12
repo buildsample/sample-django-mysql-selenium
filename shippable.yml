@@ -3,7 +3,8 @@ language: python
 python:
   - 2.7
 addons:
-    firefox: "18.0"
+    firefox: "17.0"
+    #firefox: "18.0"
     #firefox: "19.0"
     #firefox: "20.0"
     #firefox: "21.0"
