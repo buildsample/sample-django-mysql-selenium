@@ -18,7 +18,7 @@ class StorageTestCase(unittest.TestCase):
     score.score = 1234
     score_class_mock.objects.all.return_value.order_by.return_value = QuerySetMock(score_class_mock, score)
     score = storage.get_score()
-    self.assertEqual(score, 1134)
+    self.assertEqual(score, 1234)
 
 if __name__ == "__main__":
   unittest.main()
