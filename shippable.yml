@@ -1,4 +1,4 @@
-language: erlang
+language: python
 
 
 python:
@@ -46,6 +46,7 @@ script:
   - echo $BUILD_NUMBER
   - cat  ~/.gitconfig
   - echo $name
+
 #cache: true
 
 
