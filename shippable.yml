@@ -1,8 +1,10 @@
 language: python
 
-python:
+
+python
   - 2.7
   - 2.6
+
 addons:
     #firefox: "17.0"
     #firefox: "18.0"
