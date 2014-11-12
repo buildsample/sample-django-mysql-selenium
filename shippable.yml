@@ -3,8 +3,8 @@ language: python
 python:
   - 2.7
 addons:
-  firefox: "32.0"
-  selenium: "2.42"
+  - firefox: "32.0"
+  - selenium: "2.42"
 
 services:
   - selenium
