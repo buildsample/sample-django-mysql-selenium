@@ -43,5 +43,6 @@ script:
 after_script:
   - /etc/init.d/xvfb stop
 
-after_success:
-  - git push git@heroku.com:django-selenium-test.git $BRANCH
+#after_success:
+ # - git push git@heroku.com:django-selenium-test.git $BRANCH
+cache : true
