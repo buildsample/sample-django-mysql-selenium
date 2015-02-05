@@ -1,7 +1,5 @@
 language: python
 
-env:
- - secure: RO6xmKzvQgMnXvXoSz/6GL97Kq8nFtgE3Nf3SqO2/KAWZtQdcQ0RwaJn26YjIJzki6HEwVmjde64qrWofC87mJZYVY0JVpfxZT6jKE9wNTkV7zQmAlmxzG63Pcsk1jfysS46sQJqUnYCaG7eGofxKHzrC2+ZCHbIwBVxigZ/dq7IechH9HAI0wjGSz3SRq5lGlS6sE11qBtv4tzMlRvV4YMJMAZU9YKxxpDcdr0OECDHVOq7PfAPU0Qb/iRg0E/AhyIOIsh655Pu1/h0XSxFbDVtLuLHLD5IhSd6QXk5P5zja02sIwtNW3KfoiWO+4CewrbPLDcv0dkWd7VmkdDvow==
 
 python:
   - 2.7
@@ -24,7 +22,7 @@ addons:
    #firefox: "32.0"
     #firefox: "31.0"
     firefox: "30.0"
-    selenium: "2.43"
+    selenium: "2.44"
 
 services:
   - selenium
@@ -32,6 +30,8 @@ services:
 env:
   global:
     - DISPLAY=:99.0
+    - secure: RO6xmKzvQgMnXvXoSz/6GL97Kq8nFtgE3Nf3SqO2/KAWZtQdcQ0RwaJn26YjIJzki6HEwVmjde64qrWofC87mJZYVY0JVpfxZT6jKE9wNTkV7zQmAlmxzG63Pcsk1jfysS46sQJqUnYCaG7eGofxKHzrC2+ZCHbIwBVxigZ/dq7IechH9HAI0wjGSz3SRq5lGlS6sE11qBtv4tzMlRvV4YMJMAZU9YKxxpDcdr0OECDHVOq7PfAPU0Qb/iRg0E/AhyIOIsh655Pu1/h0XSxFbDVtLuLHLD5IhSd6QXk5P5zja02sIwtNW3KfoiWO+4CewrbPLDcv0dkWd7VmkdDvow==
+
    # - name=foo
 
 install:
