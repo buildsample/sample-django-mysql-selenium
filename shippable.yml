@@ -22,7 +22,7 @@ addons:
    #firefox: "32.0"
     #firefox: "31.0"
     firefox: "30.0"
-    selenium: "2.44"
+  #  selenium: "2.44"
 
 services:
   - selenium
