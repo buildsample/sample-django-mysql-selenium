@@ -32,7 +32,7 @@ env:
   global:
     - DISPLAY=:99.0
     - secure: RO6xmKzvQgMnXvXoSz/6GL97Kq8nFtgE3Nf3SqO2/KAWZtQdcQ0RwaJn26YjIJzki6HEwVmjde64qrWofC87mJZYVY0JVpfxZT6jKE9wNTkV7zQmAlmxzG63Pcsk1jfysS46sQJqUnYCaG7eGofxKHzrC2+ZCHbIwBVxigZ/dq7IechH9HAI0wjGSz3SRq5lGlS6sE11qBtv4tzMlRvV4YMJMAZU9YKxxpDcdr0OECDHVOq7PfAPU0Qb/iRg0E/AhyIOIsh655Pu1/h0XSxFbDVtLuLHLD5IhSd6QXk5P5zja02sIwtNW3KfoiWO+4CewrbPLDcv0dkWd7VmkdDvow==
-
+    - secure: dgFiHQ7SJjLfQqZapGzG5U3oUv/TzErItKC9kVQYLtiqL2d4YZ3I59u7ufNjbYvo6k4imrXMh8hdeknhfvkPKqAspRecx8ig2pYrnDditqxizTMO33uIf9mNVNGJciDgUNO1KQgJjJI2Dy93tkwCrn5s1V5SC/lxD08CNiG7SQImfXsPmsW5BNedXizN5C12KvVgmiyXcfVEVbvE7CFSOdeRU9sNl1LG7QaX1gs9UalF+ZjKn3/h4Duecp22BxNveOyz08pI5HVHS4j8qgAhzlT0ekoDXR7Aw/PYMP7SNpo1cvW/q78nnb7ZS9Ul1wX7ZlfIbkUsK1KHkCiCqIXuuQ==
    # - name=foo
 
 install:
@@ -43,6 +43,7 @@ before_script:
   - mkdir -p shippable/codecoverage
   - firefox --version
   - mysql -e 'create database if not exists test;'
+  - echo $key1
   - /etc/init.d/xvfb start 
 
 script:
