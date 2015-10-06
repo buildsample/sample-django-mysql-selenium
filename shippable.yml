@@ -31,9 +31,13 @@ services:
 env:
   global:
     - DISPLAY=:99.0
+    - secure: JGZMRQzgrZveZShYn+jocQPM3fYq5+a+2+bAC02dyp1W6dzEWAKzJu3BT4rYwMzjZ4ths8ecoHlDs5LLVlMBLTCEIzSW/LEvcgiOHdEFdY1Kz5GU0zkusGr2dKPII3CVbF3HRHfknaRHvD7p+BWl/LfpVVrGEd4sRusJLhV+UFXab5mJJN7oG8QsxIMbyPTWjncH4KcnzJzODOpg5DQYVVFX0kzPqCgRkPY+cgmntuPWNJQT8ZN+ty8rMRcsIWcpYIqkpLgKFAXHJFJglVIlI7Std0nMiy9YeV1/4aA6hMvmWihQhcG/b/KiBr3J1wp91+RS2DSewMk0CGyWxeTw3g== 
     - secure: RO6xmKzvQgMnXvXoSz/6GL97Kq8nFtgE3Nf3SqO2/KAWZtQdcQ0RwaJn26YjIJzki6HEwVmjde64qrWofC87mJZYVY0JVpfxZT6jKE9wNTkV7zQmAlmxzG63Pcsk1jfysS46sQJqUnYCaG7eGofxKHzrC2+ZCHbIwBVxigZ/dq7IechH9HAI0wjGSz3SRq5lGlS6sE11qBtv4tzMlRvV4YMJMAZU9YKxxpDcdr0OECDHVOq7PfAPU0Qb/iRg0E/AhyIOIsh655Pu1/h0XSxFbDVtLuLHLD5IhSd6QXk5P5zja02sIwtNW3KfoiWO+4CewrbPLDcv0dkWd7VmkdDvow==
     - secure: dgFiHQ7SJjLfQqZapGzG5U3oUv/TzErItKC9kVQYLtiqL2d4YZ3I59u7ufNjbYvo6k4imrXMh8hdeknhfvkPKqAspRecx8ig2pYrnDditqxizTMO33uIf9mNVNGJciDgUNO1KQgJjJI2Dy93tkwCrn5s1V5SC/lxD08CNiG7SQImfXsPmsW5BNedXizN5C12KvVgmiyXcfVEVbvE7CFSOdeRU9sNl1LG7QaX1gs9UalF+ZjKn3/h4Duecp22BxNveOyz08pI5HVHS4j8qgAhzlT0ekoDXR7Aw/PYMP7SNpo1cvW/q78nnb7ZS9Ul1wX7ZlfIbkUsK1KHkCiCqIXuuQ==
    # - name=foo
+    - secure: YPbBKl7bTqX+bjTVewgRePFgWuk7eT35iLq9ghpBUo5y5xkSkanvH/jpkPw6fCFzjI+0ujcXZ3sLZYLilXxEs2da80xMpmLOI0thSslQowx4n6emy8t8APvuBc9JH13nbZ7aD09d4Vlz6uuH6gWN0x5uJiuAYZIweQSW3h6wFhP7uSFeKaiKNJpCGQETN+Tu1hRLLMD/fyD38tF9L2guNcHKD+UmhZ7MxpER7haZW0babOISMI0eZSi3YOiW91p26FV73Mjs+3gBTbNZe0y4OqU/VTCPqKfJ/rhuKLjjij8eKMf4DvFvmOKm7Ocxx+uZF/VqoX6Zmh9CYLkQWoKQBg== 
+    - secure: LtAJheQpMnMpEJeVzjpp5VnQ2pDbrgU6uet4hX1BsBxwquJeA5s6vrVwUrRTeM7Zsus8tWzdul0hFYHARGqjr7UsvLNKjh9RuUhjHUaMttegxY6C1y2KTTfcucLB7w39Et5ejfVbLNmCAR0nd9M0xS9Qbgft5njkOvFrmLc81wec96NKf91uuuO7S47G8/+cdPn/PJhBzBXuOIYboTo0aO/76gNYzbx9PQHF/4IcPRMITly2iP9oVcH4S2FunFeAzUUzk3mGFRAavWvgdgLGdjjQT5tt+MmS51/426oEOVvQWpCLvlF+IFKyE9p1KL+jqOXa6+bNa1bL+oGmp1K3Hg==
+
 
 install:
   - pip install -r requirements.txt
@@ -43,7 +47,7 @@ before_script:
   - mkdir -p shippable/codecoverage
   - firefox --version
   - mysql -e 'create database if not exists test;'
-  - echo $key1
+  - echo $varr
   - /etc/init.d/xvfb start 
 
 script:
