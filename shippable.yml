@@ -55,8 +55,8 @@ script:
   - xvfb-run python manage.py test
  # - python manage.py test
   - echo $BUILD_NUMBER
-  - cat  ~/.gitconfig
-  - echo $env
+  #- cat  ~/.gitconfig
+  #- echo $env
 
 #cache: true
 
