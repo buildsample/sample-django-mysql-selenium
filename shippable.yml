@@ -5,15 +5,15 @@ python:
   - 2.7
   - 2.6
 
-#addons:
+addons:
     #firefox: "17.0"
     #firefox: "18.0"
     #firefox: "19.0"
     #firefox: "20.0"
     #firefox: "21.0"
     #firefox: "22.0"
-  # firefox: "27.0"
- #  selenium: "2.43"
+    firefox: "27.0"
+    selenium: "2.43"
    #firefox: "24.0"
    #firefox: "25.0"
    #firefox: "26.0"
