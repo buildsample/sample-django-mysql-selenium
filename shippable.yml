@@ -51,7 +51,7 @@ before_script:
   #- /etc/init.d/xvfb start 
 
 script:
-  - xvfb-run python manage.py test
+  - python manage.py test
  # - python manage.py test
   - echo $BUILD_NUMBER
   #- cat  ~/.gitconfig
